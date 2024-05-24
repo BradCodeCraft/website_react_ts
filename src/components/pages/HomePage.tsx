@@ -11,8 +11,8 @@ const HomePage = () => {
 
   return (
     <div className={clsx(
-      "pt-8 \
-      md:pt-12 md:px-5 md:min-h-screen",
+      "pt-8 px-4 min-h-screen\
+      md:pt-12 md:px-5",
       {
         "text-[#1e2019]": theme === 'light',
         "bg-[#1e2019] text-[#ffffff]": theme === 'dark',
@@ -20,7 +20,9 @@ const HomePage = () => {
     >
       <h1
         className="
-        md:mb-5
+        font-bold
+        mb-2 text-3xl
+        md:mb-5 md:text-6xl
         "
       >
         Home
@@ -28,6 +30,7 @@ const HomePage = () => {
 
       <h2
         className="
+        mb-2
         md:mb-5
         "
       >
@@ -36,7 +39,8 @@ const HomePage = () => {
 
       <h3
         className="
-      md:mb-5
+        mb-2
+        md:mb-5
       "
       >
         It appears to me that you have wandered into Kingdom of TypeScript filled with knowledge and mystery. Prepare to embark on a quest like no other, where coding and debugging are your greatest allies, and the treasures of ancient lore await those brave enough to seek them.
@@ -44,7 +48,8 @@ const HomePage = () => {
 
       <h3
         className="
-      md:mb-5
+        mb-2
+        md:mb-5
       "
       >
         In this enchanted realm, you will traverse TS codes teeming with unfinished documentation and delve into CSS dungeons echoing with the screams of previous wanderers trying to escape.
@@ -52,13 +57,18 @@ const HomePage = () => {
 
       <h3
         className="
-      md:mb-5
+        mb-2
+        md:mb-5
       "
       >
         Gather your tech stack, your party of enthusiastic programmers, and your realiable computer and peripherals and start the journey right here at the Home Page.
       </h3>
 
-      <h4>
+      <h4
+        className="
+        mb-2
+        md:mb-0"
+      >
         May luck be by your side!
       </h4>
 

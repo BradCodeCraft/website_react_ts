@@ -16,7 +16,7 @@ const NavigationBar = () => {
     <div className={clsx(
       // eslint-disable-next-line no-multi-str
       "fixed flex justify-around w-full \
-      text-lg \
+      text-xl \
       md:text-3xl py-2",
       {
         'bg-[#87cefa] text-[#1e2019]': theme === 'light',

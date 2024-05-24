@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import { useThemeContext } from '../contexts/GlobalThemeContext';
 
-export type Product = {
+type Product = {
   id: number;
   title: string;
   description: string;
@@ -69,7 +69,12 @@ const StorePage = () => {
         "bg-[#1e2019] text-[#ffffff]": theme === 'dark',
       })}
     >
-      <h1>
+      <h1
+        className='
+        font-bold
+        mb-2
+        md:mb-5 md:text-6xl'
+      >
         Marketplace
       </h1>
 

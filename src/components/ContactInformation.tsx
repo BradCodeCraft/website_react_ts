@@ -14,7 +14,8 @@ const ContactInformation = () => {
   return (
     <div
       className={clsx(
-        "flex flex-col \
+        "flex \
+        flex-col items-center -mx-4 pb-4 \
         md:h-56 md:items-center md:px-10 md:mt-5 md:flex-row md:font-bold md:-mx-5",
         {
           "bg-[#87cefa] text-[#1e2019]": theme === 'light',
@@ -22,13 +23,19 @@ const ContactInformation = () => {
         }
       )}
     >
-      <h1 className="md:mr-16 md:w-1/2 md:text-center md:text-6xl">
+      <h1 className="
+      font-bold text-3xl mb-3 mr-0
+      md:mb-0 md:mr-16 md:w-1/2 md:text-center md:text-6xl">
         Contact Me
       </h1>
 
-      <div className="flex md:h-full md:flex-col justify-between md:py-3">
+      <div className="flex w-full
+      flex-row
+      md:h-full md:flex-col md:justify-between md:py-3">
         <div
-          className="flex flex-row md:items-center"
+          className="flex 
+          w-1/3 flex-col items-center
+          md:w-full md:flex-row md:items-center"
         >
           <a
             href="sms:16822410059"
@@ -51,7 +58,9 @@ const ContactInformation = () => {
         </div>
 
         <div
-          className="flex flex-row md:items-center"
+          className="flex 
+          w-1/3 flex-col items-center
+          md:w-full md:flex-row md:items-center"
         >
           <a
             href="mailto:bradcodecraft@gmail.com"
@@ -74,7 +83,9 @@ const ContactInformation = () => {
         </div>
 
         <div
-          className="flex flex-row md:items-center"
+          className="flex 
+          w-1/3 flex-col items-center
+          md:w-full md:flex-row md:items-center"
         >
           <a
             href="https://maps.google.com/?q=1719 N Lincoln St, Bloomington, Indiana, 47408"

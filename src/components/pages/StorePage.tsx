@@ -62,18 +62,19 @@ const StorePage = () => {
 
   return (
     <div className={clsx(
-      "flex flex-col pt-8 \
-      md:pt-12 md:px-5 md:min-h-screen",
+      "pt-8 px-4 min-h-screen\
+      md:pt-12 md:px-5",
       {
         "text-[#1e2019]": theme === 'light',
         "bg-[#1e2019] text-[#ffffff]": theme === 'dark',
       })}
     >
       <h1
-        className='
+        className="
         font-bold
-        mb-2
-        md:mb-5 md:text-6xl'
+        mb-2 text-3xl
+        md:mb-5 md:text-6xl
+        "
       >
         Marketplace
       </h1>
@@ -86,17 +87,18 @@ const StorePage = () => {
             products.map((product: Product) =>
               <div
                 key={product.id}
-                className={clsx(
-                  `border-2
-                md:row-start-${Math.ceil(product.id / 4)} md:flex md:flex-col md:items-center md:p-5`,
+                className={clsx(`
+                  border-2 flex flex-col items-center 
+                  mb-2
+                  md:row-start-${Math.ceil(product.id / 4)} md:p-5 md:mb-0`,
                   {
-                    'md:hidden': product.id > numOfProducts,
+                    'hidden': product.id > numOfProducts,
                     '': product.id <= numOfProducts
                   }
                 )}
               >
                 <div
-                  className='mb-5 w-full h-14 text-center'
+                  className='md:mb-5 md:h-14 text-center'
                 >
                   <h3>
                     {product.title}
@@ -106,7 +108,9 @@ const StorePage = () => {
                 <img
                   src={product.thumbnail}
                   alt={product.title}
-                  className='w-52 h-52'
+                  className='
+                  w-36 h-36
+                  md:w-52 md:h-52'
                 />
 
                 <h4>
@@ -122,8 +126,8 @@ const StorePage = () => {
           className={clsx(
             "rounded-3xl px-5 py-2",
             {
-              'bg-[#87cefa] text-[#1e2019]': theme === 'light',
-              'bg-[#355691] text-[#ffffff]': theme === 'dark',
+              'bg-[#87cefa] text-[#1e2019] shadow-2xl shadow-[#87cefa]': theme === 'light',
+              'bg-[#355691] text-[#ffffff] shadow-2xl shadow-[#355691]': theme === 'dark',
               'bg-[#d62828] text-[#ffffff] cursor-default shadow-2xl shadow-[#d62828]': numOfProducts >= maxProducts
             }
           )}

@@ -30,12 +30,12 @@ const ContactInformation = () => {
       </h1>
 
       <div className="flex w-full
-      flex-row
-      md:h-full md:flex-col md:justify-between md:py-3">
+      flex-col items-center
+      md:h-full md:justify-between md:py-3">
         <div
           className="flex 
-          w-1/3 flex-col items-center
-          md:w-full md:flex-row md:items-center"
+          w-1/3 flex-col items-center mb-4
+          md:w-full md:flex-row md:items-center md:mb-0"
         >
           <a
             href="sms:16822410059"
@@ -45,7 +45,7 @@ const ContactInformation = () => {
             <FaPhone className="text-3xl md:mr-5" />
           </a>
           <div
-            className="flex flex-col"
+            className="flex flex-col text-center md:text-left"
           >
             <h2>
               (682) 241-0059
@@ -59,8 +59,8 @@ const ContactInformation = () => {
 
         <div
           className="flex 
-          w-1/3 flex-col items-center
-          md:w-full md:flex-row md:items-center"
+          w-1/3 flex-col items-center mb-4
+          md:w-full md:flex-row md:items-center md:mb-0"
         >
           <a
             href="mailto:bradcodecraft@gmail.com"
@@ -70,7 +70,7 @@ const ContactInformation = () => {
             <MdEmail className="text-3xl md:mr-5" />
           </a>
           <div
-            className="flex flex-col"
+            className="flex flex-col text-center md:text-left"
           >
             <h2>
               bradcodecraft@gmail.com
@@ -95,7 +95,7 @@ const ContactInformation = () => {
             <FaLocationDot className="text-3xl md:mr-5" />
           </a>
           <div
-            className="flex flex-col"
+            className="flex flex-col text-center md:text-left"
           >
             <h2>
               1719 North Lincoln Street
